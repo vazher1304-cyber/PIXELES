@@ -86,16 +86,16 @@ export function zoneAt(x: number, y: number): ZoneId | null {
   return zoneForTile(Math.floor(x / TILE_SIZE), Math.floor(y / TILE_SIZE));
 }
 
-// Puntos de aparición en el salón (centro del tile), se elige uno al azar.
-const SPAWN_TILES: Array<[number, number]> = [
-  [13, 10],
-  [15, 10],
-  [17, 10],
-  [14, 13],
-  [16, 13],
-];
+// Aparición: un tile libre al azar del centro del salón, para que no se encimen los avatares.
+const SPAWN_AREA = { cols: [11, 20], rows: [9, 13] } as const;
 
 export function randomSpawn(): { x: number; y: number } {
-  const [col, row] = SPAWN_TILES[Math.floor(Math.random() * SPAWN_TILES.length)];
+  const free: Array<[number, number]> = [];
+  for (let row = SPAWN_AREA.rows[0]; row <= SPAWN_AREA.rows[1]; row++) {
+    for (let col = SPAWN_AREA.cols[0]; col <= SPAWN_AREA.cols[1]; col++) {
+      if (LAYOUT[row][col] === ".") free.push([col, row]);
+    }
+  }
+  const [col, row] = free[Math.floor(Math.random() * free.length)];
   return { x: (col + 0.5) * TILE_SIZE, y: (row + 0.5) * TILE_SIZE };
 }

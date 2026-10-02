@@ -185,3 +185,46 @@ body {
   border-radius: 8px;
   max-width: calc(100vw - 32px);
 }
+
+.hud.top-left {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hud-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.people {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.people li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #f5a524;
+}
+
+.status-dot.connected {
+  background: #30a46c;
+}
+
+code {
+  background: var(--bg);
+  padding: 1px 4px;
+  border-radius: 4px;
+}

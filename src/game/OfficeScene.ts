@@ -11,6 +11,8 @@ import {
   type ZoneId,
 } from "./map";
 import { TILESET_KEY, createTileset } from "./textures";
+import type { RemotePlayers } from "./remotePlayers";
+import type { PlayerState } from "@/lib/realtime/types";
 
 const SPEED = 140;
 
@@ -22,11 +24,14 @@ export interface LocalPlayer {
 /** Callbacks del juego hacia React. */
 export interface SceneBridge {
   onZoneChange?: (zone: ZoneId | null) => void;
+  /** Se llama en cada frame con mi estado; la red decide cuándo enviarlo. */
+  onLocalState?: (state: PlayerState) => void;
 }
 
 export interface OfficeSceneData {
   player: LocalPlayer;
   bridge: SceneBridge;
+  remotes: RemotePlayers;
 }
 
 type MoveKeys = Record<"up" | "down" | "left" | "right" | "w" | "a" | "s" | "d", Phaser.Input.Keyboard.Key>;
@@ -40,6 +45,8 @@ export class OfficeScene extends Phaser.Scene {
   private meBody!: Phaser.Physics.Arcade.Body;
   private keys!: MoveKeys;
   private zone: ZoneId | null = null;
+  private remotes!: RemotePlayers;
+  private remoteAvatars = new Map<string, Avatar>();
 
   constructor() {
     super(OfficeScene.KEY);
@@ -48,6 +55,7 @@ export class OfficeScene extends Phaser.Scene {
   init(data: OfficeSceneData) {
     this.player = data.player;
     this.bridge = data.bridge;
+    this.remotes = data.remotes;
   }
 
   create() {
@@ -86,6 +94,7 @@ export class OfficeScene extends Phaser.Scene {
     });
 
     this.updateZone();
+    this.emitLocalState();
   }
 
   /** Zoom para que el mapa entero quepa en pantalla (entre 1x y 3x). */
@@ -117,6 +126,40 @@ export class OfficeScene extends Phaser.Scene {
     this.me.syncDecorations();
 
     this.updateZone();
+    this.emitLocalState();
+    this.updateRemotes();
+  }
+
+  private emitLocalState() {
+    this.bridge.onLocalState?.({
+      x: Math.round(this.me.x),
+      y: Math.round(this.me.y),
+      dir: this.me.facing,
+      moving: this.me.isMoving,
+    });
+  }
+
+  /** Crea, mueve (interpolando) y elimina los avatares remotos según el estado de red. */
+  private updateRemotes() {
+    const seen = new Set<string>();
+    for (const member of this.remotes.getMembers()) {
+      const state = this.remotes.sample(member.id);
+      if (!state) continue; // todavía no sabemos dónde está
+      seen.add(member.id);
+      let avatar = this.remoteAvatars.get(member.id);
+      if (!avatar) {
+        avatar = new Avatar(this, state.x, state.y, member.name, member.color);
+        this.remoteAvatars.set(member.id, avatar);
+      }
+      avatar.setPosition(state.x, state.y);
+      avatar.setMotion(state.dir, state.moving);
+    }
+    for (const [id, avatar] of this.remoteAvatars) {
+      if (!seen.has(id)) {
+        avatar.destroy();
+        this.remoteAvatars.delete(id);
+      }
+    }
   }
 
   private updateZone() {

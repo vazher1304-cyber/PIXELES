@@ -3,14 +3,16 @@
 import { useEffect, useRef } from "react";
 import type Phaser from "phaser";
 import type { LocalPlayer, SceneBridge } from "@/game/OfficeScene";
+import type { RemotePlayers } from "@/game/remotePlayers";
 
 interface Props {
   player: LocalPlayer;
+  remotes: RemotePlayers;
   bridge: SceneBridge;
 }
 
 /** Monta el juego de Phaser. Phaser se importa dinámicamente para que solo exista en el cliente. */
-export default function GameCanvas({ player, bridge }: Props) {
+export default function GameCanvas({ player, remotes, bridge }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   // Los callbacks se leen a través de una ref para no recrear el juego si cambian.
   const bridgeRef = useRef(bridge);
@@ -39,15 +41,16 @@ export default function GameCanvas({ player, bridge }: Props) {
       });
       const proxy: SceneBridge = {
         onZoneChange: (zone) => bridgeRef.current.onZoneChange?.(zone),
+        onLocalState: (state) => bridgeRef.current.onLocalState?.(state),
       };
-      game.scene.add(OfficeScene.KEY, OfficeScene, true, { player, bridge: proxy });
+      game.scene.add(OfficeScene.KEY, OfficeScene, true, { player, remotes, bridge: proxy });
     })();
 
     return () => {
       cancelled = true;
       game?.destroy(true);
     };
-    // El jugador no cambia mientras el juego está montado.
+    // El jugador y el almacén de remotos no cambian mientras el juego está montado.
   }, []);
 
   return <div ref={containerRef} className="game-container" />;
