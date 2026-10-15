@@ -1,0 +1,671 @@
+{
+  "schema_version": 1,
+  "art_direction_brief": "game/docs/art-direction-brief.md",
+  "assets": [
+    {
+      "id": "brolok",
+      "role": "hoja de luchador (atlas Phaser)",
+      "path": "assets/fighters/brolok.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "2048x1344 (frames 256x192)",
+        "alpha": true,
+        "anchor": "bottom-center (128,180)",
+        "frames": 52,
+        "filtering": "linear"
+      },
+      "visual_locks": [
+        "palette",
+        "silhouette",
+        "proportions",
+        "facing",
+        "light-direction"
+      ],
+      "source": {
+        "kind": "authored-by-script",
+        "url_or_tool": "game/tools/build_sprites.py",
+        "creator": "proyecto",
+        "created_at": "2026-10-15",
+        "license": "propia (generada proceduralmente, sin IA generativa ni assets de terceros)",
+        "attribution": "",
+        "prompt_or_source_record": "rig 2D + IK, supersampling x4, LANCZOS"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": true,
+        "technical_checks_passed": true,
+        "approved_by": "revisión en juego"
+      }
+    },
+    {
+      "id": "brolok_super",
+      "role": "hoja de luchador (atlas Phaser)",
+      "path": "assets/fighters/brolok_super.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "2048x1344 (frames 256x192)",
+        "alpha": true,
+        "anchor": "bottom-center (128,180)",
+        "frames": 52,
+        "filtering": "linear"
+      },
+      "visual_locks": [
+        "palette",
+        "silhouette",
+        "proportions",
+        "facing",
+        "light-direction"
+      ],
+      "source": {
+        "kind": "authored-by-script",
+        "url_or_tool": "game/tools/build_sprites.py",
+        "creator": "proyecto",
+        "created_at": "2026-10-15",
+        "license": "propia (generada proceduralmente, sin IA generativa ni assets de terceros)",
+        "attribution": "",
+        "prompt_or_source_record": "rig 2D + IK, supersampling x4, LANCZOS"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": true,
+        "technical_checks_passed": true,
+        "approved_by": "revisión en juego"
+      }
+    },
+    {
+      "id": "kaito",
+      "role": "hoja de luchador (atlas Phaser)",
+      "path": "assets/fighters/kaito.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "2048x1344 (frames 256x192)",
+        "alpha": true,
+        "anchor": "bottom-center (128,180)",
+        "frames": 52,
+        "filtering": "linear"
+      },
+      "visual_locks": [
+        "palette",
+        "silhouette",
+        "proportions",
+        "facing",
+        "light-direction"
+      ],
+      "source": {
+        "kind": "authored-by-script",
+        "url_or_tool": "game/tools/build_sprites.py",
+        "creator": "proyecto",
+        "created_at": "2026-10-15",
+        "license": "propia (generada proceduralmente, sin IA generativa ni assets de terceros)",
+        "attribution": "",
+        "prompt_or_source_record": "rig 2D + IK, supersampling x4, LANCZOS"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": true,
+        "technical_checks_passed": true,
+        "approved_by": "revisión en juego"
+      }
+    },
+    {
+      "id": "kaito_super",
+      "role": "hoja de luchador (atlas Phaser)",
+      "path": "assets/fighters/kaito_super.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "2048x1344 (frames 256x192)",
+        "alpha": true,
+        "anchor": "bottom-center (128,180)",
+        "frames": 52,
+        "filtering": "linear"
+      },
+      "visual_locks": [
+        "palette",
+        "silhouette",
+        "proportions",
+        "facing",
+        "light-direction"
+      ],
+      "source": {
+        "kind": "authored-by-script",
+        "url_or_tool": "game/tools/build_sprites.py",
+        "creator": "proyecto",
+        "created_at": "2026-10-15",
+        "license": "propia (generada proceduralmente, sin IA generativa ni assets de terceros)",
+        "attribution": "",
+        "prompt_or_source_record": "rig 2D + IK, supersampling x4, LANCZOS"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": true,
+        "technical_checks_passed": true,
+        "approved_by": "revisión en juego"
+      }
+    },
+    {
+      "id": "ryuzen",
+      "role": "hoja de luchador (atlas Phaser)",
+      "path": "assets/fighters/ryuzen.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "2048x1344 (frames 256x192)",
+        "alpha": true,
+        "anchor": "bottom-center (128,180)",
+        "frames": 52,
+        "filtering": "linear"
+      },
+      "visual_locks": [
+        "palette",
+        "silhouette",
+        "proportions",
+        "facing",
+        "light-direction"
+      ],
+      "source": {
+        "kind": "authored-by-script",
+        "url_or_tool": "game/tools/build_sprites.py",
+        "creator": "proyecto",
+        "created_at": "2026-10-15",
+        "license": "propia (generada proceduralmente, sin IA generativa ni assets de terceros)",
+        "attribution": "",
+        "prompt_or_source_record": "rig 2D + IK, supersampling x4, LANCZOS"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": true,
+        "technical_checks_passed": true,
+        "approved_by": "revisión en juego"
+      }
+    },
+    {
+      "id": "ryuzen_super",
+      "role": "hoja de luchador (atlas Phaser)",
+      "path": "assets/fighters/ryuzen_super.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "2048x1344 (frames 256x192)",
+        "alpha": true,
+        "anchor": "bottom-center (128,180)",
+        "frames": 52,
+        "filtering": "linear"
+      },
+      "visual_locks": [
+        "palette",
+        "silhouette",
+        "proportions",
+        "facing",
+        "light-direction"
+      ],
+      "source": {
+        "kind": "authored-by-script",
+        "url_or_tool": "game/tools/build_sprites.py",
+        "creator": "proyecto",
+        "created_at": "2026-10-15",
+        "license": "propia (generada proceduralmente, sin IA generativa ni assets de terceros)",
+        "attribution": "",
+        "prompt_or_source_record": "rig 2D + IK, supersampling x4, LANCZOS"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": true,
+        "technical_checks_passed": true,
+        "approved_by": "revisión en juego"
+      }
+    },
+    {
+      "id": "fx",
+      "role": "efectos aditivos (glow, beam, spark, ring, flame)",
+      "path": "assets/fx/fx.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "640x128",
+        "alpha": true,
+        "anchor": "center",
+        "frames": 5,
+        "filtering": "linear"
+      },
+      "visual_locks": [
+        "palette",
+        "silhouette",
+        "proportions",
+        "facing",
+        "light-direction"
+      ],
+      "source": {
+        "kind": "authored-by-script",
+        "url_or_tool": "game/tools/build_sprites.py",
+        "creator": "proyecto",
+        "created_at": "2026-10-15",
+        "license": "propia (generada proceduralmente, sin IA generativa ni assets de terceros)",
+        "attribution": "",
+        "prompt_or_source_record": "rig 2D + IK, supersampling x4, LANCZOS"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": true,
+        "technical_checks_passed": true,
+        "approved_by": "revisión en juego"
+      }
+    },
+    {
+      "id": "stage_atardecer_far",
+      "role": "capa de escenario",
+      "path": "assets/stages/stage_atardecer_far.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "variable",
+        "alpha": true,
+        "anchor": "n/a",
+        "frames": 1,
+        "filtering": "linear"
+      },
+      "visual_locks": [
+        "palette",
+        "silhouette",
+        "proportions",
+        "facing",
+        "light-direction"
+      ],
+      "source": {
+        "kind": "authored-by-script",
+        "url_or_tool": "game/tools/build_sprites.py",
+        "creator": "proyecto",
+        "created_at": "2026-10-15",
+        "license": "propia (generada proceduralmente, sin IA generativa ni assets de terceros)",
+        "attribution": "",
+        "prompt_or_source_record": "rig 2D + IK, supersampling x4, LANCZOS"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": true,
+        "technical_checks_passed": true,
+        "approved_by": "revisión en juego"
+      }
+    },
+    {
+      "id": "stage_atardecer_ground",
+      "role": "capa de escenario",
+      "path": "assets/stages/stage_atardecer_ground.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "variable",
+        "alpha": true,
+        "anchor": "n/a",
+        "frames": 1,
+        "filtering": "linear"
+      },
+      "visual_locks": [
+        "palette",
+        "silhouette",
+        "proportions",
+        "facing",
+        "light-direction"
+      ],
+      "source": {
+        "kind": "authored-by-script",
+        "url_or_tool": "game/tools/build_sprites.py",
+        "creator": "proyecto",
+        "created_at": "2026-10-15",
+        "license": "propia (generada proceduralmente, sin IA generativa ni assets de terceros)",
+        "attribution": "",
+        "prompt_or_source_record": "rig 2D + IK, supersampling x4, LANCZOS"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": true,
+        "technical_checks_passed": true,
+        "approved_by": "revisión en juego"
+      }
+    },
+    {
+      "id": "stage_atardecer_near",
+      "role": "capa de escenario",
+      "path": "assets/stages/stage_atardecer_near.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "variable",
+        "alpha": true,
+        "anchor": "n/a",
+        "frames": 1,
+        "filtering": "linear"
+      },
+      "visual_locks": [
+        "palette",
+        "silhouette",
+        "proportions",
+        "facing",
+        "light-direction"
+      ],
+      "source": {
+        "kind": "authored-by-script",
+        "url_or_tool": "game/tools/build_sprites.py",
+        "creator": "proyecto",
+        "created_at": "2026-10-15",
+        "license": "propia (generada proceduralmente, sin IA generativa ni assets de terceros)",
+        "attribution": "",
+        "prompt_or_source_record": "rig 2D + IK, supersampling x4, LANCZOS"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": true,
+        "technical_checks_passed": true,
+        "approved_by": "revisión en juego"
+      }
+    },
+    {
+      "id": "stage_atardecer_sky",
+      "role": "capa de escenario",
+      "path": "assets/stages/stage_atardecer_sky.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "variable",
+        "alpha": true,
+        "anchor": "n/a",
+        "frames": 1,
+        "filtering": "linear"
+      },
+      "visual_locks": [
+        "palette",
+        "silhouette",
+        "proportions",
+        "facing",
+        "light-direction"
+      ],
+      "source": {
+        "kind": "authored-by-script",
+        "url_or_tool": "game/tools/build_sprites.py",
+        "creator": "proyecto",
+        "created_at": "2026-10-15",
+        "license": "propia (generada proceduralmente, sin IA generativa ni assets de terceros)",
+        "attribution": "",
+        "prompt_or_source_record": "rig 2D + IK, supersampling x4, LANCZOS"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": true,
+        "technical_checks_passed": true,
+        "approved_by": "revisión en juego"
+      }
+    },
+    {
+      "id": "stage_isla_far",
+      "role": "capa de escenario",
+      "path": "assets/stages/stage_isla_far.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "variable",
+        "alpha": true,
+        "anchor": "n/a",
+        "frames": 1,
+        "filtering": "linear"
+      },
+      "visual_locks": [
+        "palette",
+        "silhouette",
+        "proportions",
+        "facing",
+        "light-direction"
+      ],
+      "source": {
+        "kind": "authored-by-script",
+        "url_or_tool": "game/tools/build_sprites.py",
+        "creator": "proyecto",
+        "created_at": "2026-10-15",
+        "license": "propia (generada proceduralmente, sin IA generativa ni assets de terceros)",
+        "attribution": "",
+        "prompt_or_source_record": "rig 2D + IK, supersampling x4, LANCZOS"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": true,
+        "technical_checks_passed": true,
+        "approved_by": "revisión en juego"
+      }
+    },
+    {
+      "id": "stage_isla_ground",
+      "role": "capa de escenario",
+      "path": "assets/stages/stage_isla_ground.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "variable",
+        "alpha": true,
+        "anchor": "n/a",
+        "frames": 1,
+        "filtering": "linear"
+      },
+      "visual_locks": [
+        "palette",
+        "silhouette",
+        "proportions",
+        "facing",
+        "light-direction"
+      ],
+      "source": {
+        "kind": "authored-by-script",
+        "url_or_tool": "game/tools/build_sprites.py",
+        "creator": "proyecto",
+        "created_at": "2026-10-15",
+        "license": "propia (generada proceduralmente, sin IA generativa ni assets de terceros)",
+        "attribution": "",
+        "prompt_or_source_record": "rig 2D + IK, supersampling x4, LANCZOS"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": true,
+        "technical_checks_passed": true,
+        "approved_by": "revisión en juego"
+      }
+    },
+    {
+      "id": "stage_isla_near",
+      "role": "capa de escenario",
+      "path": "assets/stages/stage_isla_near.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "variable",
+        "alpha": true,
+        "anchor": "n/a",
+        "frames": 1,
+        "filtering": "linear"
+      },
+      "visual_locks": [
+        "palette",
+        "silhouette",
+        "proportions",
+        "facing",
+        "light-direction"
+      ],
+      "source": {
+        "kind": "authored-by-script",
+        "url_or_tool": "game/tools/build_sprites.py",
+        "creator": "proyecto",
+        "created_at": "2026-10-15",
+        "license": "propia (generada proceduralmente, sin IA generativa ni assets de terceros)",
+        "attribution": "",
+        "prompt_or_source_record": "rig 2D + IK, supersampling x4, LANCZOS"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": true,
+        "technical_checks_passed": true,
+        "approved_by": "revisión en juego"
+      }
+    },
+    {
+      "id": "stage_isla_sky",
+      "role": "capa de escenario",
+      "path": "assets/stages/stage_isla_sky.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "variable",
+        "alpha": true,
+        "anchor": "n/a",
+        "frames": 1,
+        "filtering": "linear"
+      },
+      "visual_locks": [
+        "palette",
+        "silhouette",
+        "proportions",
+        "facing",
+        "light-direction"
+      ],
+      "source": {
+        "kind": "authored-by-script",
+        "url_or_tool": "game/tools/build_sprites.py",
+        "creator": "proyecto",
+        "created_at": "2026-10-15",
+        "license": "propia (generada proceduralmente, sin IA generativa ni assets de terceros)",
+        "attribution": "",
+        "prompt_or_source_record": "rig 2D + IK, supersampling x4, LANCZOS"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": true,
+        "technical_checks_passed": true,
+        "approved_by": "revisión en juego"
+      }
+    },
+    {
+      "id": "stage_llanura_far",
+      "role": "capa de escenario",
+      "path": "assets/stages/stage_llanura_far.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "variable",
+        "alpha": true,
+        "anchor": "n/a",
+        "frames": 1,
+        "filtering": "linear"
+      },
+      "visual_locks": [
+        "palette",
+        "silhouette",
+        "proportions",
+        "facing",
+        "light-direction"
+      ],
+      "source": {
+        "kind": "authored-by-script",
+        "url_or_tool": "game/tools/build_sprites.py",
+        "creator": "proyecto",
+        "created_at": "2026-10-15",
+        "license": "propia (generada proceduralmente, sin IA generativa ni assets de terceros)",
+        "attribution": "",
+        "prompt_or_source_record": "rig 2D + IK, supersampling x4, LANCZOS"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": true,
+        "technical_checks_passed": true,
+        "approved_by": "revisión en juego"
+      }
+    },
+    {
+      "id": "stage_llanura_ground",
+      "role": "capa de escenario",
+      "path": "assets/stages/stage_llanura_ground.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "variable",
+        "alpha": true,
+        "anchor": "n/a",
+        "frames": 1,
+        "filtering": "linear"
+      },
+      "visual_locks": [
+        "palette",
+        "silhouette",
+        "proportions",
+        "facing",
+        "light-direction"
+      ],
+      "source": {
+        "kind": "authored-by-script",
+        "url_or_tool": "game/tools/build_sprites.py",
+        "creator": "proyecto",
+        "created_at": "2026-10-15",
+        "license": "propia (generada proceduralmente, sin IA generativa ni assets de terceros)",
+        "attribution": "",
+        "prompt_or_source_record": "rig 2D + IK, supersampling x4, LANCZOS"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": true,
+        "technical_checks_passed": true,
+        "approved_by": "revisión en juego"
+      }
+    },
+    {
+      "id": "stage_llanura_near",
+      "role": "capa de escenario",
+      "path": "assets/stages/stage_llanura_near.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "variable",
+        "alpha": true,
+        "anchor": "n/a",
+        "frames": 1,
+        "filtering": "linear"
+      },
+      "visual_locks": [
+        "palette",
+        "silhouette",
+        "proportions",
+        "facing",
+        "light-direction"
+      ],
+      "source": {
+        "kind": "authored-by-script",
+        "url_or_tool": "game/tools/build_sprites.py",
+        "creator": "proyecto",
+        "created_at": "2026-10-15",
+        "license": "propia (generada proceduralmente, sin IA generativa ni assets de terceros)",
+        "attribution": "",
+        "prompt_or_source_record": "rig 2D + IK, supersampling x4, LANCZOS"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": true,
+        "technical_checks_passed": true,
+        "approved_by": "revisión en juego"
+      }
+    },
+    {
+      "id": "stage_llanura_sky",
+      "role": "capa de escenario",
+      "path": "assets/stages/stage_llanura_sky.png",
+      "status": "approved",
+      "technical": {
+        "dimensions": "variable",
+        "alpha": true,
+        "anchor": "n/a",
+        "frames": 1,
+        "filtering": "linear"
+      },
+      "visual_locks": [
+        "palette",
+        "silhouette",
+        "proportions",
+        "facing",
+        "light-direction"
+      ],
+      "source": {
+        "kind": "authored-by-script",
+        "url_or_tool": "game/tools/build_sprites.py",
+        "creator": "proyecto",
+        "created_at": "2026-10-15",
+        "license": "propia (generada proceduralmente, sin IA generativa ni assets de terceros)",
+        "attribution": "",
+        "prompt_or_source_record": "rig 2D + IK, supersampling x4, LANCZOS"
+      },
+      "verification": {
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": true,
+        "technical_checks_passed": true,
+        "approved_by": "revisión en juego"
+      }
+    }
+  ]
+}

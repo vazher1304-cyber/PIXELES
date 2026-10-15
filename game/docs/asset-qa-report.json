@@ -1,0 +1,165 @@
+{
+  "ok": true,
+  "assets": [
+    {
+      "path": "public/assets/fighters/brolok.png",
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 2048,
+      "height": 1344,
+      "bytes": 400937,
+      "color_count": 15234,
+      "has_alpha": true,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 2430945,
+      "content_bounds": [
+        86,
+        31,
+        1997,
+        1344
+      ],
+      "problems": []
+    },
+    {
+      "path": "public/assets/fighters/brolok_super.png",
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 2048,
+      "height": 1344,
+      "bytes": 400355,
+      "color_count": 15385,
+      "has_alpha": true,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 2430945,
+      "content_bounds": [
+        86,
+        31,
+        1997,
+        1344
+      ],
+      "problems": []
+    },
+    {
+      "path": "public/assets/fighters/kaito.png",
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 2048,
+      "height": 1344,
+      "bytes": 379757,
+      "color_count": 14240,
+      "has_alpha": true,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 2479613,
+      "content_bounds": [
+        91,
+        25,
+        1987,
+        1343
+      ],
+      "problems": []
+    },
+    {
+      "path": "public/assets/fighters/kaito_super.png",
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 2048,
+      "height": 1344,
+      "bytes": 419143,
+      "color_count": 15896,
+      "has_alpha": true,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 2457901,
+      "content_bounds": [
+        89,
+        16,
+        1987,
+        1343
+      ],
+      "problems": []
+    },
+    {
+      "path": "public/assets/fighters/ryuzen.png",
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 2048,
+      "height": 1344,
+      "bytes": 428221,
+      "color_count": 20074,
+      "has_alpha": true,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 2483801,
+      "content_bounds": [
+        82,
+        38,
+        1985,
+        1343
+      ],
+      "problems": []
+    },
+    {
+      "path": "public/assets/fighters/ryuzen_super.png",
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 2048,
+      "height": 1344,
+      "bytes": 456280,
+      "color_count": 21348,
+      "has_alpha": true,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 2466815,
+      "content_bounds": [
+        74,
+        31,
+        1985,
+        1343
+      ],
+      "problems": []
+    },
+    {
+      "path": "public/assets/fx/fx.png",
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 640,
+      "height": 128,
+      "bytes": 15255,
+      "color_count": 255,
+      "has_alpha": true,
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "transparent_pixels": 33230,
+      "content_bounds": [
+        4,
+        0,
+        613,
+        126
+      ],
+      "problems": []
+    },
+    {
+      "path": "public/assets/stages/stage_llanura_far.png",
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1920,
+      "height": 260,
+      "bytes": 5633,
+      "color_count": 2,
+      "has_alpha": true,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "transparent_pixels": 299232,
+      "content_bounds": [
+        0,
+        52,
+        1920,
+        260
+      ],
+      "problems": []
+    }
+  ]
+}

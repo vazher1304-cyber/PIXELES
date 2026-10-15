@@ -1,0 +1,14 @@
+{
+  "name": "ki-warriors-evolucion",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "assets": "python3 tools/build_sprites.py"
+  },
+  "dependencies": { "phaser": "4.2.1" },
+  "devDependencies": { "vite": "^6.0.0" }
+}

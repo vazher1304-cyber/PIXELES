@@ -1,0 +1,102 @@
+{
+ "idle": {
+  "n": 6,
+  "loop": true,
+  "fps": 6
+ },
+ "walk": {
+  "n": 6,
+  "loop": true,
+  "fps": 12
+ },
+ "jump": {
+  "n": 1,
+  "loop": false,
+  "fps": 0
+ },
+ "p1": {
+  "n": 4,
+  "loop": false,
+  "fps": 0
+ },
+ "p2": {
+  "n": 4,
+  "loop": false,
+  "fps": 0
+ },
+ "p3": {
+  "n": 4,
+  "loop": false,
+  "fps": 0
+ },
+ "kick": {
+  "n": 4,
+  "loop": false,
+  "fps": 0
+ },
+ "air": {
+  "n": 4,
+  "loop": false,
+  "fps": 0
+ },
+ "block": {
+  "n": 1,
+  "loop": false,
+  "fps": 0
+ },
+ "hurt": {
+  "n": 2,
+  "loop": false,
+  "fps": 0
+ },
+ "launched": {
+  "n": 1,
+  "loop": false,
+  "fps": 0
+ },
+ "down": {
+  "n": 1,
+  "loop": false,
+  "fps": 0
+ },
+ "ko": {
+  "n": 1,
+  "loop": false,
+  "fps": 0
+ },
+ "charge": {
+  "n": 3,
+  "loop": true,
+  "fps": 18
+ },
+ "cast": {
+  "n": 3,
+  "loop": false,
+  "fps": 0
+ },
+ "wind": {
+  "n": 2,
+  "loop": false,
+  "fps": 0
+ },
+ "fire": {
+  "n": 2,
+  "loop": true,
+  "fps": 10
+ },
+ "transform": {
+  "n": 3,
+  "loop": false,
+  "fps": 0
+ },
+ "dash": {
+  "n": 1,
+  "loop": false,
+  "fps": 0
+ },
+ "win": {
+  "n": 2,
+  "loop": true,
+  "fps": 4
+ }
+}
